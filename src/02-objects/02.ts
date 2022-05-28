@@ -14,20 +14,22 @@ type TechType = {
     title: string
 }
 
-type StudentType = {
+export type StudentType = {
     id: number,
     name: string,
     sex: string,
     age: number,
     address: AddressType,
-    technologies: Array<TechType>
+    technologies: Array<TechType>,
+    isActive: boolean,
 }
 
-const student: StudentType = {
+export const student: StudentType = {
     id: 1,
     name: "Arthur",
     sex: "male",
     age: 30,
+    isActive: true,
     address: {
         street: "Letchikov",
         city: {
